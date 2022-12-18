@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+html{
+  height:100%;
+  width:100%;
+}
+
+body{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "DosisLight", sans-serif;
+  color:white;
+}
+
+button{
+  font-family: "DosisLight", sans-serif;
+  color:white;
+}
+
+@font-face {
+  font-family: Architex;
+  src: url(assets/Architex.ttf) format("truetype");
+}
+@font-face {
+  font-family: Arabella;
+  src: url(assets/Arabella.ttf) format("truetype");
+}
+@font-face {
+  font-family: DosisLight;
+  src: url(assets/Dosis-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: DosisMedium;
+  src: url(assets/Dosis-Medium.ttf) format("truetype");
+}
+
+::ng-deep.ngx-file-drop__drop-zone{
+ border-color: white;
+}

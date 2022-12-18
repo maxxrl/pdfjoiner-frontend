@@ -1,0 +1,79 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: #202124;
+
+
+  .dropzone-title{
+    width: 80%;
+    font-size:45px;
+  }
+
+  .dropzone-wrapper {
+    width: 80%;
+    height: 50%;
+    .dropzone{
+      height:200px;
+    }
+  }
+
+  .upload-table-wrapper {
+
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+
+    th {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    td {
+      font-size: 20px;
+      margin-right: 10px;
+
+    }
+  }
+
+}
+
+
+
+
+.merge-button {
+  width: 50%;
+  height: 100px;
+  background: grey;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+
+}
+
+.choose-button {
+  background: grey;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+.dropzone-text {
+  font-size: 20px;
+}
+

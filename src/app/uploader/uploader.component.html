@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="dropzone-title">
+    PDFs hochladen
+  </div>
+  <div class="dropzone-wrapper">
+
+
+  <ngx-file-drop  dropZoneLabel="PDFs ablegen" (onFileDrop)="dropped($event)" (onFileLeave)="mergePDFs = []">
+    <ng-template ngx-file-drop-content-tmp let-openFileSelector="openFileSelector">
+      <span class="dropzone-text">PDFs hier ablegen</span>
+      <button class="choose-button" type="button" (click)="openFileSelector()">Durchsuchen</button>
+    </ng-template>
+  </ngx-file-drop>
+  </div>
+  <div class="upload-table-wrapper">
+    <table class="table" *ngIf="files.length > 0">
+      <thead>
+      <tr>
+        <th>Name</th>
+       <th>Aktion</th>
+      </tr>
+      </thead>
+      <tbody class="upload-name-style">
+      <tr *ngFor="let item of files; let i=index">
+        <td><strong>{{ item.relativePath }}</strong></td>
+       <td><button (click)="removeFile(item)">Entfernen</button></td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+  <div *ngIf="files.length > 1" class="button-wrapper">
+    <button (click)="clickMerge()" class="merge-button">Merge PDFs</button>
+  </div>
+</div>
